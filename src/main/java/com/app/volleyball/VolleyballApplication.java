@@ -10,12 +10,14 @@ import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 @SpringBootApplication
 public class VolleyballApplication extends SpringBootServletInitializer{
 
+	@Override
+	protected SpringApplicationBuilder configure(SpringApplicationBuilder applicationBuilder){
+		return applicationBuilder.sources(VolleyballApplication.class);
+	}	
+	
 	public static void main(String[] args) {
 		SpringApplication.run(VolleyballApplication.class, args);
 	}
 	
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder applicationBuilder){
-		return applicationBuilder.sources(VolleyballApplication.class);
-	}
 
 }
