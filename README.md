@@ -12,14 +12,14 @@ Modelo-DAO-Servicio
 
 ## Formato 
 ### (get, post, put)
-* /volleyball/equipos/
-* /volleyball/partidos/
-* /volleyball/sets/
+* /voleibolBack/equipos/
+* /voleibolBack/partidos/
+* /voleibolBack/sets/
 
 ### (get, delete)
-* /volleyball/equipos/{id}
-* /volleyball/partidos/{id}
-* /volleyball/sets/{id}
+* /voleibolBack/equipos/{id}
+* /voleibolBack/partidos/{id}
+* /voleibolBack/sets/{id}
 
 ## Añadir:
 * Crear Equipos:
