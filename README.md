@@ -2,6 +2,7 @@
 
 Instrucciones:
 - instalar las dependencias maven: clean install
+- SA Tomcat 9
 
 ## Base de datos
 MySql - MariaDB

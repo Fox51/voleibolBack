@@ -25,6 +25,9 @@ public class Partido {
 	@Column(name = "fecha_encuentro")
 	private Date fechaEncuentro;
 	
+	@Column(name = "jugando")
+	private boolean jugando;
+	
 	@OneToMany(targetEntity = Set.class, cascade = CascadeType.ALL, fetch=FetchType.EAGER)
     private List<Set> listaDeSets;
 	
@@ -62,5 +65,13 @@ public class Partido {
 	public void setListaDeEquipos(List<Equipo> listaDeEquipos) {
 		this.listaDeEquipos = listaDeEquipos;
 	}
+
+	public boolean isJugando() {
+		return jugando;
+	}
+
+	public void setJugando(boolean jugando) {
+		this.jugando = jugando;
+	}	
 	
 }

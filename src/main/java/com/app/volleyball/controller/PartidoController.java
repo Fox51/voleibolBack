@@ -47,4 +47,11 @@ public class PartidoController {
 	public void borrar(@PathVariable(name = "equipoId") Long partidoId){
 		this.partidoService.borrarPartido(partidoId);
 	}
+	
+	@GetMapping("/actual")
+	public Partido partidoActual(){
+		return this.partidoService.partidoActual();
+	}
+	
+	
 }

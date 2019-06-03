@@ -41,4 +41,9 @@ public class PartidoServiceImpl implements PartidoService {
 		this.partidoDao.deleteById(partidoId);
 	}
 
+	@Override
+	public Partido partidoActual() {
+		return this.partidoDao.getActual();
+	}
+
 }

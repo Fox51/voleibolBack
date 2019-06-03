@@ -16,4 +16,6 @@ public interface PartidoService {
 	Optional<Partido> obtenerPartido(Long partidoId);
 	
 	void borrarPartido(Long partidoId);
+	
+	Partido partidoActual();
 }
